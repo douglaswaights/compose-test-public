@@ -1,0 +1,11 @@
+version: ""
+services:
+    python:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        deploy:
+            replicas: 1
+        env_file:
+            - hub.env
+        hostname: IT9-5YBTDB3
